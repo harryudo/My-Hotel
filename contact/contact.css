@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: manrope;
 }
 
 .wrapper{
@@ -11,21 +11,22 @@
     justify-content: space-evenly;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-}
-
 .logo{
     cursor: pointer;
     margin-right: 20px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 ul,li{
     display: flex;
+    margin-top: 5px;
     margin-left: 50px;
     cursor: pointer;
-    font-family: Roboto;
+    font-family: manrope;
     color: var(--Gray-2, #4F4F4F);   
     font-size: 21px;
     font-style: normal;
@@ -40,80 +41,7 @@ ul li:hover{
     color: #FFF;
 }
 
- .menu{
-    display: none;
- }
-
 .btn{
-    color: #FFF;
-    height: 40px;
-    width: 94px;
-    background-color: red;
-    border: none;
-    border-radius: 4px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background-color: aliceblue;
-    color: black;
-}
-
-
-.background-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./room.img/bedddd\ 34.png);
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    object-fit: cover;
-    position: relative;
-    margin-top: 30px;
-}
-
-.centered-text {
-    text-align: center;
-    position: absolute;
-    top: 35%;
-    color: #fff;
-    left: 30%;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
-.standard-room{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
-}
-
-.text{
-    margin-top: 40px;
-}
-
-.text-different{
-  padding-top: 30px;
-}
-
-.color-text{
-    padding-top: 20px;
-    color: #C94842;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px; 
-}
-
-.btn-2{
-    margin-top: 20px;
     color: #FFF;
     height: 40px;
     width: 94px;
@@ -127,21 +55,95 @@ ul li:hover{
     cursor: pointer;
 }
 
-.btn-2:hover{
-    background-color: rgba(141, 222, 225, 0.996);
+.btn:hover{
+    background-color: aliceblue;
     color: black;
 }
 
-.Twin-Room{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
+.div-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)), url(./contactimg/Rectangle\ 10.png);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    object-fit: cover;
+    position: relative;
+    margin-top: 30px;
+
 }
 
-.Sweet-Room{
+.contain{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    font-family: manrope;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.inter-section {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px; 
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+
+
+.text-space{
+    color: var(--Gray-2, #4F4F4F);
+    margin-top: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+   margin-bottom: 50px;
+}
+
+#text{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+#uniqueInput{
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.btn-002{
+    margin-top: 30px;
+    background: #C94842;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-002:hover{
+    background-color: #b76763;
+    color: #FFF;
+}
+
+.img-container{
+    width: 100%;
+    height: 282px;
+   justify-content: center;
+   display: flex;
+}
+
+.able-dis{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
 .last-section{
@@ -176,23 +178,4 @@ ul li:hover{
 .educate{
     padding-top: 20px;
     font-style: 20px;
-}
-
-
-
-@media screen and (max-width:768px) {
-    .nav-bar, ul, li {
-         display: none;
-     }
- 
-     .btn{
-         display: none;
-     }
- 
-     .menu{
-         display: block;
-     }
-
-    
-}
-
+}  

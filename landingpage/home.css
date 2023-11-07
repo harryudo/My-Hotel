@@ -9,13 +9,18 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
-    /* display: none; */
+    align-items: center;
 }
 
 .wrapper img{
     cursor: pointer;
     margin-right: 20px;
     margin-bottom: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
 
 ul,li{
@@ -32,7 +37,13 @@ ul,li{
 
 ul li:hover{
     background-color: rgba(255, 0, 0, 0.638);
+    padding-left: 15px;
+    padding-right: 15px;
     color: #FFF;
+}
+
+.menu{
+    display: none;
 }
 
 .btn{
@@ -50,7 +61,7 @@ ul li:hover{
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover{ 
     background-color: aliceblue;
     color: black;
 }
@@ -87,6 +98,7 @@ ul li:hover{
 }
 
 .hbd{
+    color: #FFF;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -118,7 +130,7 @@ ul li:hover{
     color: #FFF;
     text-align: center;
     font-family: Roboto;
-    font-size: 45px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
 }
@@ -127,7 +139,7 @@ ul li:hover{
     color: #FFF;
     padding-left: 90px;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
@@ -167,27 +179,26 @@ ul li:hover{
 }
 
 .extaction-com{
-    background-image: url(./img/steptodown.com627231.jpg);
-    border-radius: 0% 43% 0% 25% / 25% 45% 24% 0%;
+    background-image: url(./img/Rectangle\ 5.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/Rectangle\ 5.png);
     background-size: cover;
     background-position: center;
     margin-top: 30px;
     position: relative;
-    height: 100vh; 
+    height: 70vh; 
 }
 
 .centered-text {
     text-align: center;
     position: absolute;
     top: 40%;
-    left: 25%;
-    height: ;
+    left: 30%;
     color: #fff;
     font-family: Roboto;
 }  
 
 .bar{
-    font-size: 45px;
+    font-size: 27px;
     font-weight: 700;
 }
 
@@ -195,11 +206,10 @@ ul li:hover{
     color: #FFF;
     text-align: center;
     font-family: Roboto;
-    font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 400;
     margin-top: 50px;
 }
@@ -212,8 +222,8 @@ ul li:hover{
   text-align: center;
   margin-bottom: 50px;
   font-family: Roboto;
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 21px;
+  font-weight: 900;
 }
 
 .display{
@@ -276,10 +286,80 @@ ul li:hover{
     
 .educate{
     padding-top: 20px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
 }
    
-@media only screen and (min-width: 768px) {
-    .nav-bar{
-        /* display: none; */
+@media screen and (max-width:768px) {
+   .nav-bar, ul, li {
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .overall{
+        margin-top: 30px;
+    }
+    .head{
+      font-size: 30px;
+    }
+    .span{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    .para-two{
+        font-size: 12px;
+    }
+
+    .centered-text{
+       padding-right: 80px;
+        height: 50vh;
+        /* display: flex; */
     }
 }
+
+@media screen and (max-width: 375px) {
+    .head{
+        font-size: 24px
+    }
+    .form{
+        margin-right: 5rem;
+    }
+    .span{
+        font-size: 3px;
+        padding-left: 10px;
+    }
+}
+
+@media  (max-width: 425px) {
+    .wrapper{
+        justify-content: space-between;
+    }
+
+  .overall{
+         display: block;
+          height: 50vh;
+          align-items: center;
+    }
+    .form{
+        margin-left: 5rem;
+    }
+    .span{
+        font-size: 15px;
+        padding-left: 5.5rem;
+    }
+
+    .para-two{
+        font-size: 15px;
+    }
+}    
