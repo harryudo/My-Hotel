@@ -7,39 +7,27 @@
 
 .wrapper{
     margin-top: 20px;
+    cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.wrapper img{
-    cursor: pointer;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
 
 a{
     color: black;
     text-decoration: none;
 }
 
-ul,li{
+.un-list,li{
     display: flex;
     margin-left: 50px;
-    cursor: pointer;
     font-family: Roboto;
     color: var(--Gray-2, #4F4F4F);   
     font-size: 21px;
     font-style: normal;
     font-weight: 900;
    line-height: normal;
-}
-
-ul li:hover{
-    background-color: rgba(255, 0, 0, 0.638);
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #FFF;
 }
 
 .menu{
@@ -239,7 +227,7 @@ ul li:hover{
 
 .btn-com{
     margin-top: 30px;
-    margin-left: 40rem;
+    /* margin-left: 40rem; */
     margin-bottom: 30px;
     color: #FFF;
     height: 50px;
@@ -294,6 +282,9 @@ ul li:hover{
 }
    
 @media screen and (max-width:768px) {
+    .wrapper{
+        justify-content: space-between;
+    }
    .nav-bar, ul, li {
         display: none;
     }
@@ -324,8 +315,76 @@ ul li:hover{
     .centered-text{
        padding-right: 80px;
         height: 50vh;
-        /* display: flex; */
     }
+
+    .btn-com{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+   
+    .overall-section {
+        flex-direction: 
+        text-align: center; 
+      }
+    
+      .harry {
+        text-align: center; 
+      }
+    
+      .img-com {
+        width: 100%; 
+        margin-top: 5px; 
+      }
+    
+      .inspiration {
+        text-align: center;
+      }
+    
+      .boy-text h1 {
+        font-size: 1.8rem;
+      }
+    
+      .display {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+      }
+    
+      .img-ten {
+        width: 95%; 
+        margin-bottom: 20px; 
+      }
+    
+      .btn-com {
+        margin-top: 20px; 
+      }
+    
+      .last-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+      }
+    
+      .text-comprise {
+        margin-top: 20px;
+      }
+    
+      .educate {
+        margin-bottom: 5px;
+      }
+
+      .centered-text {
+        text-align: center;
+      }
+    
+      .bar {
+        font-size: 1.5rem;
+      }
+    
+      .para-under {
+        font-size: 0.9rem;
+      }
 }
 
 @media screen and (max-width: 375px) {

@@ -9,6 +9,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .logo{
@@ -25,20 +26,12 @@ ul,li{
     display: flex;
     margin-top: 5px;
     margin-left: 50px;
-    cursor: pointer;
     font-family: manrope;
     color: var(--Gray-2, #4F4F4F);   
     font-size: 21px;
     font-style: normal;
     font-weight: 900;
    line-height: normal;
-}
-
-ul li:hover{
-    background-color: rgba(255, 0, 0, 0.638);
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #FFF;
 }
 
 .btn{
@@ -67,7 +60,7 @@ ul li:hover{
     height: 70vh;
     object-fit: cover;
     position: relative;
-    margin-top: 30px;
+    margin-top: 5px;
 
 }
 

@@ -7,6 +7,7 @@
 
 .wrapper{
     margin-top: 20px;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
 }
@@ -21,7 +22,7 @@ a{
     margin-right: 20px;
 }
 
-ul,li{
+.un-list,li{
     display: flex;
     margin-left: 50px;
     cursor: pointer;
@@ -31,13 +32,6 @@ ul,li{
     font-style: normal;
     font-weight: 900;
    line-height: normal;
-}
-
-ul li:hover{
-    background-color: rgba(255, 0, 0, 0.638);
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #FFF;
 }
 
  .menu{
@@ -71,7 +65,7 @@ ul li:hover{
     height: 80vh;
     object-fit: cover;
     position: relative;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .centered-text {
@@ -181,6 +175,9 @@ ul li:hover{
 
 
 @media screen and (max-width:768px) {
+    .wrapper{
+        overflow: none;
+    }
     .nav-bar, ul, li {
          display: none;
      }
@@ -192,6 +189,19 @@ ul li:hover{
      .menu{
          display: block;
      }
+
+     .background-image {
+        background-size: cover;
+      }
+    
+      .centered-text {
+        text-align: center; 
+        padding: 20px;
+      }
+    
+      h2 {
+        font-size: 1.5rem;
+      }
 
     
 }
